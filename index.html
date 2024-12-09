@@ -9,15 +9,24 @@
         position: relative;
         border-radius: 15px;
       }
+      .links {
+        color: #4493f8;
+      }
+
+      h2 {
+        color: #ab7df8;
+      }
       body {
-        background-color: beige;
+        background-color: #212830;
       }
       #text {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
+        color: green;
+        margin: 20px;
       }
       img {
-        width: 150px;
+        width: 200px;
         margin: 5px;
       }
       #things {
@@ -27,11 +36,6 @@
         position: relative;
         left: 500px;
         font-size: 2rem;
-      }
-      @media (max-width: 420px) {
-        body {
-          position: relative;
-        }
       }
     </style>
     <meta charset="UTF-8" />
@@ -43,7 +47,6 @@
       <h1>Grigoris Papadongonas</h1>
     </div>
     <img id="Egw" src="Egw.png" />
-
     <i
       ><h2>Some <span id="things"> things</span> about me</h2>
     </i>
@@ -54,7 +57,8 @@
         My name is Grigoris Papadongonas, I come from Greece with a working
         background as a cook and butcher<br />
         As of making this resume I found my love of programming and
-        <a href="https://www.udemy.com/">Udemy</a> has been my best friend.<br />
+        <a href="https://www.udemy.com/"><span class="links"> Udemy</span></a>
+        has been my best friend.<br />
         Through courses made for beginers as well as senior developers, I have
         been studying and training in order to be better, efficient and
         resourcefull.
@@ -63,14 +67,20 @@
       <ul>
         <li>
           IT Applications Technician at
-          <a href="https://epalkorydallou.edu.gr/">1o ΕΠΑΛ Κορυδαλλου</a>
+          <a span class="links" href="https://epalkorydallou.edu.gr/"
+            >1o ΕΠΑΛ Κορυδαλλου</a
+          >
         </li>
         <li>
-          Butchers Diploma at <a href="https://bbs-blk.de/">Berufschule</a> in
-          Germany
+          Butchers Diploma at
+          <a href="https://bbs-blk.de/"
+            ><span class="links">Berufschule</span></a
+          >
+          in Germany
         </li>
         <li>
-          Chef Diploma at <a href="https://iekpeiraia.gr/">ΔΙΕΚ Πειραια</a>
+          Chef Diploma at
+          <a class="links" href="https://iekpeiraia.gr/">ΔΙΕΚ Πειραια</a>
         </li>
       </ul>
       <hr />
@@ -79,10 +89,16 @@
         <li>Cook at various hotels and restaurants</li>
         <li>
           Butcher at
-          <a href="https://www.harzer-blasenwurst.de/">Harzer-blasenwurst</a> in
-          Germany for 3 years
+          <a class="links" href="https://www.harzer-blasenwurst.de/"
+            >>Harzer-blasenwurst</a
+          >
+          in Germany for 3 years
         </li>
-        <li>Butcher at <a href="https://www.ab.gr/">AB</a> in Greece</li>
+        <li>
+          Butcher at
+          <a class="links" href="https://www.ab.gr/"></a>
+          in Greece
+        </li>
       </ul>
       <hr />
       <h2>Skills</h2>
@@ -96,9 +112,14 @@
       <hr />
     </div>
 
-    <a id="contact" href="./contact.html">Contact me</a>
+    <a class="links" id="contact" href="./contact.html"
+      ><span id="link7">Contact me</span></a
+    >
     <footer>
       <p>© 2024 Grigoris Papadongonas</p>
+    </footer>
+  </body>
+</html>
     </footer>
   </body>
 </html>
